@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Kontrak WiFi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📶 Admin Kontrak WiFi</h1>
+
+    <button id="darkModeBtn">
+        🌙 Dark Mode
+    </button>
+</header>
+
+<div class="container">
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Pelanggan</h3>
+            <h2 id="totalPelanggan">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Masa Gratis</h3>
+            <h2 id="masaGratis">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Kontrak Berjalan</h3>
+            <h2 id="kontrak">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Bebas Kontrak</h3>
+            <h2 id="bebasKontrak">0</h2>
+        </div>
+
+    </div>
+
+    <div class="form">
+
+        <h2>Tambah Pelanggan</h2>
+
+        <input type="text"
+        id="nama"
+        placeholder="Nama Pelanggan">
+
+        <input type="text"
+        id="wa"
+        placeholder="Nomor WhatsApp">
+
+        <input type="text"
+        id="alamat"
+        placeholder="Alamat">
+
+        <select id="paket">
+
+            <option>10 Mbps</option>
+
+            <option>15 Mbps</option>
+
+            <option>20 Mbps</option>
+
+            <option>50 Mbps</option>
+
+            <option>100 Mbps</option>
+
+        </select>
+
+        <input
+        type="number"
+        id="harga"
+        placeholder="Harga Paket">
+
+        <input
+        type="date"
+        id="tanggalPasang">
+
+        <button id="simpan">
+
+            Simpan Pelanggan
+
+        </button>
+
+    </div>
+    <div class="searchBox">
+
+    <input
+        type="text"
+        id="cari"
+        placeholder="🔍 Cari nama, nomor WA, atau paket...">
+
+</div>
+
+    <div class="table">
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>Nama</th>
+
+                <th>WA</th>
+
+                <th>Paket</th>
+
+                <th>Pasang</th>
+
+                <th>Bayar Pertama</th>
+
+                <th>Bebas Kontrak</th>
+
+                <th>Status</th>
+
+                <th>Aksi</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="tbody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
